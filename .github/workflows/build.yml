@@ -1,3 +1,11 @@
+name: Build firmware
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
 jobs:
   build-left:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
